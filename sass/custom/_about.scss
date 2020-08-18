@@ -1,0 +1,56 @@
+.navbar {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
+}
+.back-home {
+  font-size: 1.2rem;
+  color: $primary-color !important;
+  &:hover {
+    color: #988345 !important;
+  }
+}
+.svg {
+  filter: invert(81%) sepia(15%) saturate(644%) hue-rotate(198deg)
+    brightness(118%) contrast(102%);
+  &:hover {
+    filter: invert(51%) sepia(5%) saturate(3421%) hue-rotate(7deg)
+      brightness(101%) contrast(93%);
+  }
+}
+#about {
+  font-size: 1.5rem;
+  margin-bottom: 9rem !important;
+  h1 {
+    color: #988345 !important;
+  }
+  ul {
+    list-style: none;
+  }
+  p,
+  li {
+    color: $primary-color;
+    margin-left: 1rem;
+  }
+  ul li::before {
+    content: '\2022';
+    color: #988345;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    // margin-left: -1em;
+  }
+}
+
+.active {
+  color: #988345 !important;
+}
+
+.back {
+  font-size: 1.2rem;
+
+  .btn {
+    font-size: 16px !important;
+    text-align: center;
+    color: #988345 !important;
+    border: 1px solid #988345 !important;
+  }
+}
