@@ -384,10 +384,6 @@ body {
   .developer-img {
     display: none;
   }
-  .row {
-    display: block !important;
-    width: 100%;
-  }
   #footer {
     margin-top: 5rem;
   }
