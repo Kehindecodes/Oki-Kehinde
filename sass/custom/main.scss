@@ -60,6 +60,8 @@ body {
 //  Section:intro
 .intro {
   position: relative;
+  height: 100vh;
+
   h1 {
     color: #f1f1e6 !important;
   }
@@ -67,8 +69,14 @@ body {
     color: #bbbbbb;
     font-size: 20px;
   }
+  .row {
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+  }
   .intro-content {
-    padding-top: 9rem;
+    // padding-top: 9rem;
     .btn {
       background: #988345;
       color: #f1f1e6;

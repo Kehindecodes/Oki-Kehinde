@@ -182,7 +182,7 @@ hr {
 }
 
 @media (max-width: 599px) {
-  h1 {
+  #main h1 {
     text-align: center;
   }
 }
@@ -248,6 +248,7 @@ body {
 
 .intro {
   position: relative;
+  height: 100vh;
 }
 
 .intro h1 {
@@ -259,8 +260,15 @@ body {
   font-size: 20px;
 }
 
-.intro .intro-content {
-  padding-top: 9rem;
+.intro .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100%;
 }
 
 .intro .intro-content .btn {
@@ -376,6 +384,9 @@ body {
 }
 
 @media (min-width: 600px) and (max-width: 768px) {
+  .navbar-nav a:hover::after {
+    width: 0% !important;
+  }
   .intro-content {
     display: block !important;
     width: 100%;
@@ -390,6 +401,10 @@ body {
 }
 
 @media (max-width: 599px) {
+  .navbar-nav a:hover::after {
+    width: 0% !important;
+    opacity: 0;
+  }
   .intro-content {
     display: block !important;
     width: 100%;
