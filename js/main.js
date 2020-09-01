@@ -54,18 +54,56 @@ window.addEventListener('DOMContentLoaded', () => {
   const status = document.querySelector('.modal-body');
   const modalTitle = document.querySelector('.modal-title');
   const modalFooter = document.querySelector('.modal-footer');
+  const modalContent = document.querySelector('.modal-content');
 
   //success
   const success = () => {
-    form.reset();
     // sendBtn.innerText = 'Message Sent';
+    setTimeout(() => {
+      // form.reset();
+      status.innerHTML = ` <div class="form-outline mb-4">
+      <input
+        type="text"
+        id="fullName"
+        class="form-control"
+        name="name"
+      />
+      <label for="fullName" class="form-label">Full name</label>
+      <small class="my-1"></small>
+    </div>
+
+    <div class="form-outline mb-4">
+      <input
+        type="email"
+        name="_replyto"
+        id="email"
+        class="form-control"
+      />
+      <label for="email" class="form-label">Email address</label>
+      <small></small>
+    </div>
+    <div class="form-outline mb-4">
+      <textarea
+        name="message"
+        id="message"
+        rows="4"
+        class="form-control"
+      ></textarea>
+      <label for="message" class="form-label">Message</label>
+      <small></small>
+    </div>
+  </div>`;
+      modalTitle.style.display = 'block';
+      modalFooter.style.display = 'block';
+    }, 2000);
+
     status.innerHTML = `
-    <div class="text-center">
-    <img src="img/checked.svg" alt="checked" class="svg1">
-    <h2>Message Sent</h2>
-    <p>Get back to you soon </p>
-  </div>
-    `;
+      <div class="text-center">
+      <img src="img/checked.svg" alt="checked" class="svg1">
+      <h2>Message Sent</h2>
+      <p>Get back to you soon </p>
+    </div>
+      `;
     modalTitle.style.display = 'none';
     modalFooter.style.display = 'none';
   };
@@ -91,6 +129,7 @@ window.addEventListener('DOMContentLoaded', () => {
       .then((res) => {
         if (res.status === 200) {
           success();
+
           console.log('success');
         } else {
           error();
