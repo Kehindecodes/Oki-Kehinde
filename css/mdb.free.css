@@ -2243,7 +2243,7 @@ progress {
 .form-control:focus {
   color: #616161;
   background-color: #fff;
-  border-color: #8ab4f8;
+  border-color: #988345;
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(18, 102, 241, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(18, 102, 241, 0.25);
@@ -2341,7 +2341,7 @@ progress {
 }
 
 .form-select:focus {
-  border-color: #8ab4f8;
+  border-color: #988345;
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(18, 102, 241, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(18, 102, 241, 0.25);
@@ -2437,7 +2437,7 @@ progress {
 }
 
 .form-check-input:focus {
-  border-color: #8ab4f8;
+  border-color: #988345;
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(18, 102, 241, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(18, 102, 241, 0.25);
@@ -2486,7 +2486,7 @@ progress {
 }
 
 .form-switch .form-check-input:focus {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%238ab4f8'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23988345'/%3e%3c/svg%3e");
 }
 
 .form-switch .form-check-input:checked {
@@ -2520,7 +2520,7 @@ progress {
 }
 
 .form-file-input:focus-within ~ .form-file-label {
-  border-color: #8ab4f8;
+  border-color: #988345;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(18, 102, 241, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(18, 102, 241, 0.25);
 }

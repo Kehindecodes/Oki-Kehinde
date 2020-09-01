@@ -38,3 +38,10 @@ $font-color: #5b5b5b;
 $primary-font: 'Calibre-Regular', sans-serif;
 $secondary-font: 'Calibre-SemiBold', sans-serif;
 $tertiary-font: 'Calibre-Medium', sans-serif;
+
+// *calculate a circle's circumference based on radius
+
+@function circumference($r) {
+  $pi: 3.141592653;
+  @return 2 * $pi * $r;
+}
