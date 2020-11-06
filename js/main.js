@@ -144,6 +144,7 @@ window.addEventListener('DOMContentLoaded', () => {
     //   console.log('request fail');
     // });
   }
+  
   // make menu btn work
   const menuBtn = document.querySelector('.menuBtn');
   const mainMenu = document.querySelector('.mainMenu');

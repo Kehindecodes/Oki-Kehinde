@@ -205,6 +205,8 @@ body {
   position: relative;
   min-height: 100%;
   padding-bottom: 6rem;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .navbar {
@@ -252,7 +254,6 @@ body {
 
 .intro {
   position: relative;
-  height: 100vh;
 }
 
 .intro h1 {
